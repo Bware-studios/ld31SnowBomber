@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>845E3180-738A-43B7-A7B6-D83F00B28665</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SnowBomber</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DD675256F8C4600B30B5CDC2FCA772611EF6C8D9</key>
+		<string>github.com:Bware-studios/ld31.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SnowBomber/proj.ios_mac/SnowBomber.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DD675256F8C4600B30B5CDC2FCA772611EF6C8D9</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Bware-studios/ld31.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DD675256F8C4600B30B5CDC2FCA772611EF6C8D9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD675256F8C4600B30B5CDC2FCA772611EF6C8D9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ld31</string>
+		</dict>
+	</array>
+</dict>
+</plist>
