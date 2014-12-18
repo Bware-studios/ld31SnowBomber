@@ -8,6 +8,7 @@ USING_NS_CC;
 
 using namespace std;
 
+
 // to add a key increase this and list
 int n_keys = 5;
 EventKeyboard::KeyCode keys[]={
@@ -251,17 +252,26 @@ void GameScene::display_menu()
     
         MenuItemImage *im1;
 
+        char * infotxt_filename = "info.png";
+        char * playtxt_filename = "play.png";
+        Application::Platform platform = Application::getInstance()->getTargetPlatform();
+        if ( platform == Application::Platform::OS_ANDROID || platform == Application::Platform::OS_IPHONE || platform == Application::Platform::OS_IPAD ) {
+            infotxt_filename = "mobile/info.png";
+            playtxt_filename = "mobile/play.png";
+        }
+        
+        
         im1=MenuItemImage::create("titulo.png","titulo.png");
         im1->setEnabled(false);
         im1->setPosition(Vec2(0,150));
         m1->addChild(im1);
     
-        im1=MenuItemImage::create("info.png","info.png");
+        im1=MenuItemImage::create(infotxt_filename,infotxt_filename);
         im1->setEnabled(false);
         im1->setPosition(Vec2(0,0));
         m1->addChild(im1);
     
-        im1=MenuItemImage::create("play.png","play.png");
+        im1=MenuItemImage::create(playtxt_filename,playtxt_filename);
         im1->setEnabled(false);
         im1->setPosition(Vec2(0,-130));
         m1->addChild(im1);
