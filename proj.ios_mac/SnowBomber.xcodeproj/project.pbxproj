@@ -72,6 +72,7 @@
 		9786AEE51A40FAE3004C4201 /* SpritePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9786AED41A40FAE3004C4201 /* SpritePlayer.cpp */; };
 		9786AEE61A40FAE3004C4201 /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9786AED61A40FAE3004C4201 /* utilities.cpp */; };
 		9786AEE71A40FAE3004C4201 /* utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9786AED61A40FAE3004C4201 /* utilities.cpp */; };
+		97F931501A425FEC00E57C55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F9314F1A425FEC00E57C55 /* Images.xcassets */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -282,6 +283,7 @@
 		9786AED51A40FAE3004C4201 /* SpritePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpritePlayer.h; path = ../Classes/SpritePlayer.h; sourceTree = "<group>"; };
 		9786AED61A40FAE3004C4201 /* utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilities.cpp; path = ../Classes/utilities.cpp; sourceTree = "<group>"; };
 		9786AED71A40FAE3004C4201 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilities.h; path = ../Classes/utilities.h; sourceTree = "<group>"; };
+		97F9314F1A425FEC00E57C55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "SnowBomber Mac/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -491,6 +493,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				97F9314F1A425FEC00E57C55 /* Images.xcassets */,
 				9700655A1A40FF5E006ABD72 /* assets */,
 			);
 			name = Resources;
@@ -685,6 +688,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F931501A425FEC00E57C55 /* Images.xcassets in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				9700655C1A40FF5E006ABD72 /* assets in Resources */,
 			);
@@ -850,6 +854,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -879,6 +884,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
