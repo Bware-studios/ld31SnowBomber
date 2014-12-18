@@ -32,8 +32,9 @@ bool SpritePlayer::init()
 
 
 void SpritePlayer::event_move_end() {
-    SpriteMoveable::event_move_end();
     check_touch_move();
+
+    SpriteMoveable::event_move_end();
     keys_state_changed();
     bomb=false;
 }

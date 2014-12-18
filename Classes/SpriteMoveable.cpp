@@ -197,7 +197,7 @@ void SpriteMoveable::setTarget(cocos2d::Vec2 t)
     }
     selectionlayer->setTileGID(14,t);
     //cout<<"----------\n";
-    checkNextTargetStep();
+    if (!moving) checkNextTargetStep();
 }
 
 bool SpriteMoveable::checkNextTargetStep()
@@ -210,6 +210,7 @@ bool SpriteMoveable::checkNextTargetStep()
 //    themap->getLayer("selection")->setTileGID(0, n);
     int deltax = n.x-map_position.x;
     int deltay = n.y-map_position.y;
+    
 
     bool following_path=false;
     if (deltax>0) {
