@@ -26,6 +26,7 @@ bool SpritePlayer::init()
     offset_iy=0;
     if (!SpriteMoveable::init()) return false;
     theplayer=this;
+    
     return true;
 }
 

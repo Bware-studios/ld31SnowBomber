@@ -74,6 +74,9 @@ bool GameScene::init()
     
 
     key_is_pressed = new bool[n_keys];
+    for (int i=0;i<n_keys;i++) {
+        key_is_pressed[i]=false;
+    }
     
     load_map();
     
