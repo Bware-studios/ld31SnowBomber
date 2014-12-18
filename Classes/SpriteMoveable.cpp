@@ -197,7 +197,12 @@ void SpriteMoveable::setTarget(cocos2d::Vec2 t)
     }
     selectionlayer->setTileGID(14,t);
     //cout<<"----------\n";
-    if (!moving) checkNextTargetStep();
+    if (!moving) {
+        checkNextTargetStep();
+    } else {
+        // un poco apaño pero... si esta llamando a setTarget al acabar un movimiento lo primero que va a hacer es quitar el nodo en el que esta por lo que hay que añadir uno para compensar
+        path_to_target.push_back(Vec2(map_position));
+    }
 }
 
 bool SpriteMoveable::checkNextTargetStep()
