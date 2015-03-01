@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "SnowBomber iOS.app"
-               BlueprintName = "SnowBomber iOS"
-               ReferencedContainer = "container:SnowBomber.xcodeproj">
+               BlueprintIdentifier = "5087E73D17EB910900C73F5D"
+               BuildableName = "Fred.app"
+               BlueprintName = "Fred Mac"
+               ReferencedContainer = "container:Fred.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "SnowBomber iOS.app"
-            BlueprintName = "SnowBomber iOS"
-            ReferencedContainer = "container:SnowBomber.xcodeproj">
+            BlueprintIdentifier = "5087E73D17EB910900C73F5D"
+            BuildableName = "Fred.app"
+            BlueprintName = "Fred Mac"
+            ReferencedContainer = "container:Fred.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "SnowBomber iOS.app"
-            BlueprintName = "SnowBomber iOS"
-            ReferencedContainer = "container:SnowBomber.xcodeproj">
+            BlueprintIdentifier = "5087E73D17EB910900C73F5D"
+            BuildableName = "Fred.app"
+            BlueprintName = "Fred Mac"
+            ReferencedContainer = "container:Fred.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "SnowBomber iOS.app"
-            BlueprintName = "SnowBomber iOS"
-            ReferencedContainer = "container:SnowBomber.xcodeproj">
+            BlueprintIdentifier = "5087E73D17EB910900C73F5D"
+            BuildableName = "Fred.app"
+            BlueprintName = "Fred Mac"
+            ReferencedContainer = "container:Fred.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

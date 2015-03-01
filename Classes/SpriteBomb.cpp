@@ -23,11 +23,11 @@ bool SpriteBomb::init()
     
 
     Sequence *waitandcall = Sequence::createWithTwoActions(
-            DelayTime::create(4.5),
+            DelayTime::create(4.5*0 + 2),
             CallFunc::create(CC_CALLBACK_0(SpriteBomb::event_time_ends, this))
         );
     runAction(waitandcall);
-    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("bomba_450msec.mp3");
+    timer_sound_id=CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("bomba_450msec.mp3");
 
     return true;
 }
@@ -57,7 +57,9 @@ void SpriteBomb::check_explosion_propagation(int deltax, int deltay)
 
 void SpriteBomb::event_time_ends()
 {
+    CocosDenshion::SimpleAudioEngine::getInstance()->stopEffect(timer_sound_id);
     CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("explosion.mp3");
+    themap->getLayer("main")->setTileGID(0, getPositionInMap());
     check_explosion_propagation(0, 0);
     check_explosion_propagation(0, 1);
     check_explosion_propagation(0, -1);

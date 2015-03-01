@@ -23,6 +23,9 @@ public:
     
     void event_time_ends();
     
+private:
+    int timer_sound_id;
+    
 };
 
 

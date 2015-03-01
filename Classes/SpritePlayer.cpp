@@ -66,6 +66,7 @@ void SpritePlayer::place_bomb()
         SpriteBomb *abomb = SpriteBomb::create();
         abomb->setPositionInMap(mypos);
         themap->addChild(abomb);
+        themap->getLayer("main")->setTileGID(16, mypos);
     }
 }
 

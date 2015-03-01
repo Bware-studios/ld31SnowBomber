@@ -249,14 +249,21 @@ void GameScene::display_menu()
     if (!menulayer) {
         menulayer = LayerColor::create(Color4B(255,255,255,220));
         menulayer->setPosition(Vec2(0,0));
+
+        
+        const char * back_filename = "backmenu.png";
+        Sprite *backspr = Sprite::create(back_filename);
+        backspr->setPosition(visibleSize.width/2,visibleSize.height/2);
+        menulayer->addChild(backspr,10);
+        
         Menu *m1=Menu::create();
         m1->setPosition(visibleSize.width/2,visibleSize.height/2);
-        menulayer->addChild(m1);
-    
+        menulayer->addChild(m1,20);
+
         MenuItemImage *im1;
 
-        char * infotxt_filename = "info.png";
-        char * playtxt_filename = "play.png";
+        const char * infotxt_filename = "info.png";
+        const char * playtxt_filename = "play.png";
         Application::Platform platform = Application::getInstance()->getTargetPlatform();
         if ( platform == Application::Platform::OS_ANDROID || platform == Application::Platform::OS_IPHONE || platform == Application::Platform::OS_IPAD ) {
             infotxt_filename = "mobile/info.png";
@@ -266,17 +273,17 @@ void GameScene::display_menu()
         
         im1=MenuItemImage::create("titulo.png","titulo.png");
         im1->setEnabled(false);
-        im1->setPosition(Vec2(0,150));
+        im1->setPosition(Vec2(-90,195));
         m1->addChild(im1);
     
         im1=MenuItemImage::create(infotxt_filename,infotxt_filename);
         im1->setEnabled(false);
-        im1->setPosition(Vec2(0,0));
+        im1->setPosition(Vec2(0,-55));
         m1->addChild(im1);
     
         im1=MenuItemImage::create(playtxt_filename,playtxt_filename);
         im1->setEnabled(false);
-        im1->setPosition(Vec2(0,-130));
+        im1->setPosition(Vec2(25,-245));
         m1->addChild(im1);
         menulayer->retain();
     }

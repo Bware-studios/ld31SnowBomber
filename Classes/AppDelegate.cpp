@@ -18,7 +18,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLView::create("SnowBomber");
+        glview = GLView::create("Fred");
         
         Size fs=glview->getFrameSize();
         std::cout<<fs.width<<" x "<<fs.height<<"\n";
